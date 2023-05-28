@@ -1,13 +1,9 @@
 :root {
-  --var1: #2f4b5e;
+  --couleurPrincpial: #2f4b5e;
 }
 
 * {
-  background-color: var(--var1);
-}
-
-.container {
-  max-width: 1200px;
+  background-color: var(--couleurPrincpial);
 }
 
 header {
@@ -19,18 +15,35 @@ header {
   flex-wrap: nowrap;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 30px;
+nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
 }
 nav ul li {
-  display: inline-block;
-  padding-right: 50px;
+  padding-right: 40px;
 }
-nav ul li a {
+nav ul li a:hover {
+  color: #8abe53;
+}
+nav li {
+  margin-right: 20px;
+  padding-top: 20px;
+}
+nav a {
   text-decoration: none;
+  color: #ece3e3;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.3s;
 }
 
 .carousel {
