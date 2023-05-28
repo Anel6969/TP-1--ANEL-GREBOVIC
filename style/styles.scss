@@ -2,8 +2,14 @@
 	--couleurPrincpial: #181d1f;
 	--couleurSecond: #3c494e;
 	--texteCouleur: rgb(214, 207, 207);
+	--fontDebase:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
+ p{
+	color: var(--texteCouleur);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
   * {
 	background-color: var(--couleurPrincpial);
   }
@@ -28,6 +34,7 @@
 	ul {
 	  display: flex;
 	  list-style: none;
+	  
   
 	  li {
 		padding-right: 40px;
@@ -41,11 +48,13 @@
 	li {
 	  margin-right: 20px;
 	  padding-top: 20px;
+	  
 	}
   
 	a {
 	  text-decoration: none;
 	  color: var(--texteCouleur);
+	  font-family: var(--fontDebase);
 	}
   
 	ul li a {
@@ -85,7 +94,7 @@
   
 	p {
 	  display: flex;
-	  width: 300px;
+	  width: 500px;
 	}
   
 	.input-container {
@@ -111,12 +120,18 @@
 	padding: 10px 100px;
   }
   
-  button {
+  .btn {
+	font-family: var(--fontDebase);
 	padding: 20px 50px;
 	background-color: var(--couleurSecond);
 	color: var(--texteCouleur);
 	border: none;
-	border-radius: 30px;
+	border-radius: 10px;
 	cursor: pointer;
-  }
-  
+
+	&:hover {
+		background-color: var(--texteCouleur);
+		color: var(--couleurPrincpial);
+	}
+}
+
