@@ -1,17 +1,10 @@
-:root {
-  --couleurPrincpial: #181d1f;
-  --couleurSecond: #3c494e;
-  --texteCouleur: rgb(214, 207, 207);
-  --fontDebase:"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 p {
-  color: var(--texteCouleur);
+  color: rgb(214, 207, 207);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 * {
-  background-color: var(--couleurPrincpial);
+  background-color: #181d1f;
 }
 
 header {
@@ -38,7 +31,7 @@ nav ul li {
   padding-right: 40px;
 }
 nav ul li a:hover {
-  color: var(--couleurSecond);
+  color: #3c494e;
 }
 nav li {
   margin-right: 20px;
@@ -46,8 +39,8 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: var(--texteCouleur);
-  font-family: var(--fontDebase);
+  color: rgb(214, 207, 207);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 nav ul li a {
   transition: all 0.3s;
@@ -106,15 +99,15 @@ input {
 }
 
 .btn {
-  font-family: var(--fontDebase);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px 50px;
-  background-color: var(--couleurSecond);
-  color: var(--texteCouleur);
+  background-color: #3c494e;
+  color: rgb(214, 207, 207);
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 .btn:hover {
-  background-color: var(--texteCouleur);
-  color: var(--couleurPrincpial);
+  background-color: rgb(214, 207, 207);
+  color: #181d1f;
 }

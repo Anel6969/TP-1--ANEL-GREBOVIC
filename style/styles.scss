@@ -1,17 +1,31 @@
-:root {
-	--couleurPrincpial: #181d1f;
-	--couleurSecond: #3c494e;
-	--texteCouleur: rgb(214, 207, 207);
-	--fontDebase:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+@mixin PremierBoutton {
+	font-family: $fontDebase;
+	padding: 20px 50px;
+	background-color: $couleurSecond;
+	color: $texteCouleur;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+  
+	&:hover {
+	  background-color: $texteCouleur;
+	  color: $couleurPrincpial;
+	}
   }
+
+  $couleurPrincpial: #181d1f;
+  $couleurSecond: #3c494e;
+  $texteCouleur: rgb(214, 207, 207);
+  $fontDebase : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   
  p{
-	color: var(--texteCouleur);
+	color: $texteCouleur;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 
   * {
-	background-color: var(--couleurPrincpial);
+	background-color: $couleurPrincpial;
   }
   
   header {
@@ -40,7 +54,7 @@
 		padding-right: 40px;
   
 		a:hover {
-		  color: var(--couleurSecond);
+		  color: $couleurSecond;
 		}
 	  }
 	}
@@ -53,8 +67,8 @@
   
 	a {
 	  text-decoration: none;
-	  color: var(--texteCouleur);
-	  font-family: var(--fontDebase);
+	  color: $texteCouleur;
+	  font-family: $fontDebase;
 	}
   
 	ul li a {
@@ -121,17 +135,6 @@
   }
   
   .btn {
-	font-family: var(--fontDebase);
-	padding: 20px 50px;
-	background-color: var(--couleurSecond);
-	color: var(--texteCouleur);
-	border: none;
-	border-radius: 10px;
-	cursor: pointer;
-
-	&:hover {
-		background-color: var(--texteCouleur);
-		color: var(--couleurPrincpial);
-	}
+	@include PremierBoutton;
 }
 
