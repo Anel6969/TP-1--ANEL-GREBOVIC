@@ -85,6 +85,21 @@ p {
 input {
   margin-right: 10px;
   padding: 10px 100px;
+  outline: none;
+}
+input::-moz-placeholder {
+  color: rgb(214, 207, 207);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration-line: underline;
+  font-size: 15px;
+  padding-left: 50px;
+}
+input::placeholder {
+  color: rgb(214, 207, 207);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration-line: underline;
+  font-size: 15px;
+  padding-left: 50px;
 }
 
 .btn {
@@ -98,7 +113,7 @@ input {
 }
 .btn:hover {
   background-color: rgb(214, 207, 207);
-  color: #1f1818;
+  color: #966622;
 }
 
 p {
@@ -107,5 +122,5 @@ p {
 }
 
 * {
-  background-color: #1f1818;
+  background-color: #966622;
 }
