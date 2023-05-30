@@ -1,0 +1,38 @@
+.section1 {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: space-around;
+  
+	p {
+	  display: flex;
+	  width: 500px;
+	}
+  
+	.input-container {
+	  display: flex;
+	  flex-direction: row-reverse;
+	  justify-content: space-around;
+	}
+  }
+  
+  p {
+	margin-bottom: 5px;
+  }
+  
+  .input-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+  }
+  
+  input {
+	margin-right: 10px;
+	padding: 10px 100px;
+  }
+  
+  .btn {
+	@include PremierBoutton;
+}

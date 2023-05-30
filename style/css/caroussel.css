@@ -1,0 +1,13 @@
+.carousel {
+  padding-top: 50px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.carousel img {
+  max-width: 1280px;
+  height: auto;
+}
