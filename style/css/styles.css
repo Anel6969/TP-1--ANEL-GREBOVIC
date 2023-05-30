@@ -346,6 +346,14 @@ input::placeholder {
   color: #966622;
 }
 
+.section2 {
+  display: flex;
+  flex-direction: column;
+}
+.section2 .skin1 .skin2 .skin3 {
+  display: flex;
+}
+
 p {
   color: rgb(214, 207, 207);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
