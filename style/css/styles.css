@@ -348,10 +348,29 @@ input::placeholder {
 
 .section2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  justify-content: space-evenly;
 }
-.section2 .skin1 .skin2 .skin3 {
+.section2 .csgoskins {
   display: flex;
+}
+.section2 .imgSkins {
+  padding: 10px;
+}
+.section2 .skin1,
+.section2 .skin2,
+.section2 .skin3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texteSkins {
+  display: flex;
+  width: 200px;
 }
 
 p {
