@@ -4,6 +4,7 @@
 @import '_caroussel';
 @import '_pageSection1';
 @import '_pageSection2';
+@import '_pageSection3';
 
   
  p{
@@ -13,5 +14,15 @@
 
   body {
 	background-color: $couleurPrincpial;
+	margin: 0;
   }
   
+  html {
+	height: 100%;
+  }
+
+  .separateur {
+	border-top: 5px solid #3c494e; /* Définit une bordure supérieure de 1 pixel de large et de couleur noire */
+	margin: 40px 0; /* Définit les marges supérieure et inférieure du séparateur */
+	
+  }

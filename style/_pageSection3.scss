@@ -1,0 +1,21 @@
+
+    .div1 { grid-area: 2 / 1 / 4 / 2; }
+    .div2 { grid-area: 1 / 2 / 3 / 4; }
+    .div3 { grid-area: 3 / 2 / 5 / 3; }
+    .div4 { grid-area: 2 / 4 / 3 / 5; }
+    .div5 { grid-area: 2 / 5 / 4 / 6; }
+    .div6 { grid-area: 3 / 3 / 6 / 5; }
+
+.grid {
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    max-width: 1200px;
+    
+}    
+
+.secction3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
