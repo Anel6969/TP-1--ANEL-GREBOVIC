@@ -468,6 +468,10 @@ h1 {
   max-width: 600px;
   align-items: flex-start;
 }
+.graphiqueTXT h1 {
+  margin: 0;
+  padding-bottom: 10px;
+}
 
 .sold h1,
 .sold p {
@@ -494,6 +498,7 @@ h1 {
   flex-direction: row;
   align-items: flex-start;
   padding-bottom: 80px;
+  padding-top: 60px;
 }
 .statistique2 h1 {
   margin: 0;
