@@ -1,0 +1,65 @@
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+    img{
+        padding-right: 100px;
+    }
+    
+}
+
+.graphiqueTXT{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: flex-start;
+
+}
+
+.sold h1,
+.sold p {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.sold
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    
+
+    h1{
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.statistique2{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 80px;
+ 
+
+    h1{
+        margin: 0;
+        margin-right: 150px;
+    }
+
+    p {
+        margin: 0;
+        margin-right: 150px;
+    }
+}
+
+.btn {
+	@include PremierBoutton;
+}
