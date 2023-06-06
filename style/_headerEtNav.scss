@@ -9,43 +9,37 @@ header {
   
   /* MENU NAVIGATION */
   
-  nav {
+  .nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	border-radius: 10px;
-  
-	ul {
-	  display: flex;
-	  list-style: none;
-	  
-  
-	  li {
-		padding-right: 40px;
-  
-		a:hover {
-		  color: $couleurSecond;
+}
+.nav__list {
+	display: flex;
+	list-style: none;
+	.nav__item {
+		.nav__link {
+			transition: all 0.3s;
+			&:after {
+				transition: all 0.3s;
+			}
+			&:before {
+				transition: all 0.3s;
+			}
 		}
-	  }
 	}
-  
-	li {
-	  margin-right: 20px;
-	  padding-top: 20px;
-	  
+}
+.nav__item {
+	padding-right: 40px;
+	margin-right: 20px;
+	padding-top: 20px;
+}
+.nav__link { 
+	&:hover {
+		color: $couleurSecond;
 	}
-  
-	a {
-	  text-decoration: none;
-	  color: $texteCouleur;
-	  font-family: $fontDebase;
-	}
-  
-	ul li a {
-	  transition: all 0.3s;
-  
-	  &:after, &:before {
-		transition: all 0.3s;
-	  }
-	}
-  }
+	text-decoration: none;
+	color: $texteCouleur;
+	font-family: $fontDebase;
+}

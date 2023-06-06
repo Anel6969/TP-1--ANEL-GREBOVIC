@@ -51,7 +51,6 @@
 }
 
 .CSGO2-container{
-	background-color: $couleurSecond;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -91,3 +90,13 @@
     color: white;
   }
   
+  body, html {
+	margin: 0;
+	padding: 0;
+  }
+  .section2Background {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: $couleurSecond;
+  }

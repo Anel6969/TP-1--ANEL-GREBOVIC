@@ -9,36 +9,40 @@ header {
 }
 
 /* MENU NAVIGATION */
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
 }
-nav ul {
+
+.nav__list {
   display: flex;
   list-style: none;
 }
-nav ul li {
+.nav__list .nav__item .nav__link {
+  transition: all 0.3s;
+}
+.nav__list .nav__item .nav__link:after {
+  transition: all 0.3s;
+}
+.nav__list .nav__item .nav__link:before {
+  transition: all 0.3s;
+}
+
+.nav__item {
   padding-right: 40px;
-}
-nav ul li a:hover {
-  color: #3c494e;
-}
-nav li {
   margin-right: 20px;
   padding-top: 20px;
 }
-nav a {
+
+.nav__link {
   text-decoration: none;
   color: rgb(214, 207, 207);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-nav ul li a {
-  transition: all 0.3s;
-}
-nav ul li a:after, nav ul li a:before {
-  transition: all 0.3s;
+.nav__link:hover {
+  color: #3c494e;
 }
 
 .carousel {
@@ -320,7 +324,6 @@ input::placeholder {
 }
 
 .CSGO2-container {
-  background-color: #3c494e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,6 +384,18 @@ h1 {
   color: white;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.section2Background {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #3c494e;
+}
+
 .section2 {
   display: flex;
   flex-direction: row;
@@ -388,20 +403,19 @@ h1 {
   padding-top: 30px;
   justify-content: space-evenly;
 }
-.section2 .csgoskins {
-  display: flex;
-}
-.section2 .imgSkins {
-  padding: 10px;
-}
-.section2 .skin1,
-.section2 .skin2,
-.section2 .skin3 {
+
+.section2__skin1,
+.section2__skin2,
+.section2__skin3 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: column-reverse;
+}
+
+.section2__imgSkins {
+  padding: 10px;
 }
 
 .texteSkins {
@@ -415,33 +429,40 @@ h1 {
   align-items: center;
   padding-top: 80px;
 }
-.CSGO2-container2 p {
+
+.CSGO2-container2__text {
   width: 800px;
   padding-top: 50px;
 }
 
-.grid {
+.secction3__grid {
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   max-width: 1200px;
 }
-.grid .div1 {
+
+.secction3__div1 {
   grid-area: 2/1/4/2;
 }
-.grid .div2 {
+
+.secction3__div2 {
   grid-area: 1/2/3/4;
 }
-.grid .div3 {
+
+.secction3__div3 {
   grid-area: 3/2/5/3;
 }
-.grid .div4 {
+
+.secction3__div4 {
   grid-area: 2/4/3/5;
 }
-.grid .div5 {
+
+.secction3__div5 {
   grid-area: 2/5/4/6;
 }
-.grid .div6 {
+
+.secction3__div6 {
   grid-area: 3/3/6/5;
 }
 
