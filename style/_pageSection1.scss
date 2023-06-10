@@ -68,35 +68,12 @@
 	background-color: $couleurPrincpial;
 }
 
-@keyframes color {
-    0%   { background: #966622; }
-    20%  { background: #887965; }
-    40%  { background: #796f61; }
-    60%  { background: #c2a06c; }
-    80%  { background: #b98741; }
-    100% { background: #966622; }
-  }
+canvas {
   
-  body {
-    background: #966622; /* Fallback */
-    animation: color 9s infinite linear;
-    text-align: center;
-    padding: 2em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
   }
-  h1 {
-    text-align: center;
-    font-family: 'Kavoon', sans-serif;
-    font-size: 2.5em;
-    color: white;
-  }
+
   
-  body, html {
-	margin: 0;
-	padding: 0;
-  }
-  .section2Background {
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	background-color: $couleurSecond;
-  }

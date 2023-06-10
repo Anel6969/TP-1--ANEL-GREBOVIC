@@ -350,50 +350,11 @@ input::placeholder {
   color: #966622;
 }
 
-@keyframes color {
-  0% {
-    background: #966622;
-  }
-  20% {
-    background: #887965;
-  }
-  40% {
-    background: #796f61;
-  }
-  60% {
-    background: #c2a06c;
-  }
-  80% {
-    background: #b98741;
-  }
-  100% {
-    background: #966622;
-  }
-}
-body {
-  background: #966622; /* Fallback */
-  animation: color 9s infinite linear;
-  text-align: center;
-  padding: 2em;
-}
-
-h1 {
-  text-align: center;
-  font-family: "Kavoon", sans-serif;
-  font-size: 2.5em;
-  color: white;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
-.section2Background {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: #3c494e;
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
 }
 
 .section2 {
@@ -432,7 +393,14 @@ body, html {
 
 .CSGO2-container2__text {
   width: 800px;
-  padding-top: 50px;
+  padding-top: 20px;
+}
+
+.section2Background {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #3c494e;
 }
 
 .secction3__grid {
@@ -471,6 +439,7 @@ body, html {
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 80px;
+  background-color: #3c494e;
 }
 
 .section4 {
@@ -655,17 +624,17 @@ body, html {
 }
 .card {
   width: 250px;
-  border: 5px solid #3c494e;
-  border-radius: 8px;
+  border: 15px solid #966622;
+  border-radius: 20px;
   padding: 10px;
-  margin-right: 10px;
   display: inline-block;
-  margin: 50px 100px 0 0;
+  margin-top: 50px;
 }
 
 .card img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .card h3 {
@@ -694,14 +663,20 @@ body, html {
 
 .bigTitre {
   width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .section5 {
+  margin-left: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #3c494e;
 }
 .section5 img {
   width: auto;
@@ -719,4 +694,8 @@ body {
 
 html {
   height: 100%;
+}
+
+h1 {
+  color: rgb(214, 207, 207);
 }
