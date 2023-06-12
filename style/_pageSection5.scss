@@ -1,11 +1,11 @@
 .card {
     width: 250px;
-    border: 15px solid $couleurPrincpial;
+    border: 3px solid $couleurPrincpial;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     
     display: inline-block;
-    margin-top: 50px;
+    margin: 50px 0 50px 0;
 }
     
   .card img {
@@ -47,13 +47,15 @@
 
 .section5{
   margin-left: 50px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-evenly;
   background-color: $couleurSecond;
-
+  margin: 0;
+  
   img{
     width: auto;
   }

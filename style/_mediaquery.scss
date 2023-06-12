@@ -1,83 +1,112 @@
-/* Pour les écrans d'une largeur maximale de 768 pixels */
-@media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  
-    nav ul li {
-      padding-right: 20px;
-    }
-  
-    .carousel {
-      padding-top: 30px;
-    }
-  
-    .CSSgal .slider h2 {
-      margin-top: 20vh;
-    }
-  
-    .section1 .input-container {
-      flex-direction: column;
-    }
-  
-    .input-group {
-      flex-direction: column;
-      padding: 10px 0 20px;
-    }
-  
-    input {
-      margin-right: 0;
-      margin-bottom: 10px;
-      padding: 10px;
-    }
-  
-    .CSGO2-container .csgo_2 {
-      width: 100%;
-      padding-right: 0;
-    }
-  
-    .section2 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .section2 .csgoskins {
-      flex-direction: column;
-    }
-  
-    .section2 .skin1,
-    .section2 .skin2,
-    .section2 .skin3 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .section2 .texteSkins {
-      width: auto;
-    }
-  
-    .CSGO2-container2 p {
-      width: 100%;
-      padding-top: 30px;
-    }
-  
-    .grid {
-      grid-template-areas:
-        "div1 div1"
-        "div2 div3"
-        "div4 div5"
-        "div6 div6";
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto auto;
-    }
-  
-    .section4 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .astrodivider {
-      width: 90%;
-    }
+@media (max-width: 500px) {
+  /* Placez vos styles ici */
+
+  .nav__menu {
+      display: none;
   }
-  
+
+  .nav__list {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .nav__item {
+      margin-bottom: 10px;
+  }
+
+  .nav__link {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+
+  /* Ajoutez d'autres styles spécifiques ici */
+
+  .section1 p {
+      font-size: 14px;
+  }
+
+  .input-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .CSGO2-container {
+      text-align: center;
+  }
+
+  .CSGO2-container2__title {
+      font-size: 20px;
+  }
+
+  .texte_2 {
+      font-size: 14px;
+  }
+
+  .section2 {
+      flex-direction: column;
+  }
+
+  .section2__skin1,
+  .section2__skin2,
+  .section2__skin3 {
+      text-align: center;
+  }
+
+  .section2__texteSkins {
+      font-size: 14px;
+  }
+
+  .section2__imgSkins {
+      width: 100%;
+      height: auto;
+  }
+
+  .secction3__grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+  }
+
+  .section4 h1 {
+      font-size: 20px;
+  }
+
+  .section4 p {
+      font-size: 14px;
+  }
+
+  .statistique2 div {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .bigTitre h1 {
+      font-size: 24px;
+  }
+
+  .testee {
+      font-size: 14px;
+  }
+
+  .section5 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+  }
+
+  .card h3 {
+      font-size: 16px;
+  }
+
+  .card p {
+      font-size: 12px;
+  }
+
+  .section6 {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+  }
+
+  .form-container {
+      width: 100%;
+  }
+}

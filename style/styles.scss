@@ -9,6 +9,8 @@
 @import '_separateur';
 @import '_mediaquery';
 @import '_pageSection5';
+@import '_pageSection6';
+@import '_footer';
 
   
  p{
@@ -25,6 +27,7 @@
 	height: 100%;
   }
 
-  h1{
-	color: $texteCouleur;
-  }
+h1 , h2, h3 {
+  color: $texteCouleur;
+}
+

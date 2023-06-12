@@ -38,7 +38,7 @@ header {
 
 .nav__link {
   text-decoration: none;
-  color: rgb(214, 207, 207);
+  color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .nav__link:hover {
@@ -295,14 +295,14 @@ input {
   outline: none;
 }
 input::-moz-placeholder {
-  color: rgb(214, 207, 207);
+  color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration-line: underline;
   font-size: 15px;
   padding-left: 50px;
 }
 input::placeholder {
-  color: rgb(214, 207, 207);
+  color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration-line: underline;
   font-size: 15px;
@@ -313,13 +313,13 @@ input::placeholder {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px 50px;
   background-color: #3c494e;
-  color: rgb(214, 207, 207);
+  color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 .btn:hover {
-  background-color: rgb(214, 207, 207);
+  background-color: white;
   color: #966622;
 }
 
@@ -338,7 +338,7 @@ input::placeholder {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px 50px;
   background-color: #3c494e;
-  color: rgb(214, 207, 207);
+  color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -346,7 +346,7 @@ input::placeholder {
   background-color: #966622;
 }
 .btn2:hover {
-  background-color: rgb(214, 207, 207);
+  background-color: white;
   color: #966622;
 }
 
@@ -503,13 +503,13 @@ canvas {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px 50px;
   background-color: #3c494e;
-  color: rgb(214, 207, 207);
+  color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 .btn:hover {
-  background-color: rgb(214, 207, 207);
+  background-color: white;
   color: #966622;
 }
 
@@ -542,7 +542,7 @@ canvas {
   text-align: center;
   line-height: 40px;
   font-style: normal;
-  color: rgb(214, 207, 207);
+  color: white;
 }
 
 .astrodividermask {
@@ -559,76 +559,100 @@ canvas {
   box-shadow: 0 0 8px #3c494e;
 }
 
-/* Pour les écrans d'une largeur maximale de 768 pixels */
-@media screen and (max-width: 768px) {
-  header {
+@media (max-width: 500px) {
+  /* Placez vos styles ici */
+  .nav__menu {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
     flex-direction: column;
   }
-  nav ul li {
-    padding-right: 20px;
-  }
-  .carousel {
-    padding-top: 30px;
-  }
-  .CSSgal .slider h2 {
-    margin-top: 20vh;
-  }
-  .section1 .input-container {
-    flex-direction: column;
-  }
-  .input-group {
-    flex-direction: column;
-    padding: 10px 0 20px;
-  }
-  input {
-    margin-right: 0;
+  .nav__item {
     margin-bottom: 10px;
-    padding: 10px;
   }
-  .CSGO2-container .csgo_2 {
+  .nav__link {
+    display: block;
     width: 100%;
-    padding-right: 0;
+    text-align: center;
+  }
+  /* Ajoutez d'autres styles spécifiques ici */
+  .section1 p {
+    font-size: 14px;
+  }
+  .input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .CSGO2-container {
+    text-align: center;
+  }
+  .CSGO2-container2__title {
+    font-size: 20px;
+  }
+  .texte_2 {
+    font-size: 14px;
   }
   .section2 {
     flex-direction: column;
-    align-items: center;
   }
-  .section2 .csgoskins {
-    flex-direction: column;
+  .section2__skin1,
+  .section2__skin2,
+  .section2__skin3 {
+    text-align: center;
   }
-  .section2 .skin1,
-  .section2 .skin2,
-  .section2 .skin3 {
-    flex-direction: column;
-    align-items: center;
+  .section2__texteSkins {
+    font-size: 14px;
   }
-  .section2 .texteSkins {
-    width: auto;
-  }
-  .CSGO2-container2 p {
+  .section2__imgSkins {
     width: 100%;
-    padding-top: 30px;
+    height: auto;
   }
-  .grid {
-    grid-template-areas: "div1 div1" "div2 div3" "div4 div5" "div6 div6";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+  .secction3__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
-  .section4 {
+  .section4 h1 {
+    font-size: 20px;
+  }
+  .section4 p {
+    font-size: 14px;
+  }
+  .statistique2 div {
     flex-direction: column;
     align-items: center;
   }
-  .astrodivider {
-    width: 90%;
+  .bigTitre h1 {
+    font-size: 24px;
+  }
+  .testee {
+    font-size: 14px;
+  }
+  .section5 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .card h3 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 12px;
+  }
+  .section6 {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .form-container {
+    width: 100%;
   }
 }
 .card {
   width: 250px;
-  border: 15px solid #966622;
+  border: 3px solid #966622;
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
   display: inline-block;
-  margin-top: 50px;
+  margin: 50px 0 50px 0;
 }
 
 .card img {
@@ -671,19 +695,145 @@ canvas {
 
 .section5 {
   margin-left: 50px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-evenly;
   background-color: #3c494e;
+  margin: 0;
 }
 .section5 img {
   width: auto;
 }
 
+#map-container {
+  position: relative;
+  width: 1200px;
+  height: 700px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.form-container {
+  position: absolute;
+  border-radius: 10px;
+  top: 100;
+  right: 50;
+  width: 400px;
+  background-color: #966622;
+  padding: 20px;
+  color: white;
+}
+.form-container form {
+  margin-bottom: 10px;
+}
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-container input[type=text] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.form-container input[type=email] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.form-container textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.form-container .name-field {
+  display: flex;
+  justify-content: space-between;
+}
+.form-container .name-field input[type=text] {
+  width: 88%;
+}
+.form-container input[type=submit] {
+  background-color: #966622;
+  color: #966622;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.section6 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.confirmation p {
+  width: 800px;
+}
+
+.texteFormulaire {
+  display: flex;
+  padding: 5 5px 40px 5px;
+}
+
+.form-group input:focus {
+  outline: 0;
+}
+
+.form-group.success input {
+  border-color: greenyellow;
+}
+
+.form-group.error input {
+  border-color: red;
+}
+
+.form-group.errorMessage {
+  color: red;
+  font-size: 8px;
+}
+
+.logoFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.navFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.faitPar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mediaLinks {
+  display: flex;
+  align-items: center;
+}
+
+.mediaLinks a {
+  margin-right: 10px;
+}
+
 p {
-  color: rgb(214, 207, 207);
+  color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -696,6 +846,6 @@ html {
   height: 100%;
 }
 
-h1 {
-  color: rgb(214, 207, 207);
+h1, h2, h3 {
+  color: white;
 }
