@@ -1,4 +1,3 @@
-@charset "UTF-8";
 header {
   display: flex;
   justify-content: space-between;
@@ -8,7 +7,6 @@ header {
   flex-wrap: nowrap;
 }
 
-/* MENU NAVIGATION */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -261,18 +259,18 @@ http://stackoverflow.com/a/34696029/383904
   text-decoration: none;
 }
 
-.section1 {
+.obtenirCodeSection {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-around;
 }
-.section1 p {
+.obtenirCodeSection p {
   display: flex;
   width: 300px;
 }
-.section1 .input-container {
+.obtenirCodeSection .input-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -354,10 +352,17 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #3c494e;
 }
 
-.section2 {
+.obtenirCodeSectionBackground {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #3c494e;
+}
+
+.sectionSkins {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -365,9 +370,9 @@ canvas {
   justify-content: space-evenly;
 }
 
-.section2__skin1,
-.section2__skin2,
-.section2__skin3 {
+.sectionSkins__skin1,
+.sectionSkins__skin2,
+.sectionSkins__skin3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -375,7 +380,7 @@ canvas {
   flex-direction: column-reverse;
 }
 
-.section2__imgSkins {
+.sectionSkins__imgSkins {
   padding: 10px;
 }
 
@@ -396,45 +401,38 @@ canvas {
   padding-top: 20px;
 }
 
-.section2Background {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: #3c494e;
-}
-
-.secction3__grid {
+.sectionGrid__grid {
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   max-width: 1200px;
 }
 
-.secction3__div1 {
+.sectionGrid__div1 {
   grid-area: 2/1/4/2;
 }
 
-.secction3__div2 {
+.sectionGrid__div2 {
   grid-area: 1/2/3/4;
 }
 
-.secction3__div3 {
+.sectionGrid__div3 {
   grid-area: 3/2/5/3;
 }
 
-.secction3__div4 {
+.sectionGrid__div4 {
   grid-area: 2/4/3/5;
 }
 
-.secction3__div5 {
+.sectionGrid__div5 {
   grid-area: 2/5/4/6;
 }
 
-.secction3__div6 {
+.sectionGrid__div6 {
   grid-area: 3/3/6/5;
 }
 
-.secction3 {
+.sectionGrid {
   display: flex;
   justify-content: center;
   padding-top: 100px;
@@ -442,13 +440,13 @@ canvas {
   background-color: #3c494e;
 }
 
-.section4 {
+.sectionStatistiques {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
 }
-.section4 img {
+.sectionStatistiques img {
   padding-right: 100px;
 }
 
@@ -463,23 +461,9 @@ canvas {
   padding-bottom: 10px;
 }
 
-.sold h1,
-.sold p {
-  margin: 0;
-  padding-top: 10px;
-}
-
-.sold {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 20px;
-}
 .sold h1 {
   margin: 0;
-}
-.sold p {
-  margin: 0;
+  padding-top: 10px;
 }
 
 .statistique2 {
@@ -494,23 +478,23 @@ canvas {
   margin: 0;
   margin-right: 150px;
 }
-.statistique2 p {
+
+.sold {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.sold p {
+  margin: 0;
+  padding-top: 10px;
+}
+.sold h1 {
+  margin: 0;
+}
+.sold p {
   margin: 0;
   margin-right: 150px;
-}
-
-.btn {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding: 20px 50px;
-  background-color: #3c494e;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: white;
-  color: #966622;
 }
 
 .astrodivider {
@@ -559,93 +543,6 @@ canvas {
   box-shadow: 0 0 8px #3c494e;
 }
 
-@media (max-width: 500px) {
-  /* Placez vos styles ici */
-  .nav__menu {
-    display: none;
-  }
-  .nav__list {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav__item {
-    margin-bottom: 10px;
-  }
-  .nav__link {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  /* Ajoutez d'autres styles spécifiques ici */
-  .section1 p {
-    font-size: 14px;
-  }
-  .input-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .CSGO2-container {
-    text-align: center;
-  }
-  .CSGO2-container2__title {
-    font-size: 20px;
-  }
-  .texte_2 {
-    font-size: 14px;
-  }
-  .section2 {
-    flex-direction: column;
-  }
-  .section2__skin1,
-  .section2__skin2,
-  .section2__skin3 {
-    text-align: center;
-  }
-  .section2__texteSkins {
-    font-size: 14px;
-  }
-  .section2__imgSkins {
-    width: 100%;
-    height: auto;
-  }
-  .secction3__grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-  .section4 h1 {
-    font-size: 20px;
-  }
-  .section4 p {
-    font-size: 14px;
-  }
-  .statistique2 div {
-    flex-direction: column;
-    align-items: center;
-  }
-  .bigTitre h1 {
-    font-size: 24px;
-  }
-  .testee {
-    font-size: 14px;
-  }
-  .section5 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-  .card h3 {
-    font-size: 16px;
-  }
-  .card p {
-    font-size: 12px;
-  }
-  .section6 {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  .form-container {
-    width: 100%;
-  }
-}
 .card {
   width: 250px;
   border: 3px solid #966622;
@@ -654,38 +551,33 @@ canvas {
   display: inline-block;
   margin: 50px 0 50px 0;
 }
-
 .card img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-
 .card h3 {
   margin-top: 10px;
   font-size: 18px;
 }
-
 .card p {
   margin-top: 5px;
   font-size: 14px;
 }
-
 .card .social-links {
   margin-top: 10px;
 }
-
 .card .social-links a {
   display: inline-block;
   margin-right: 5px;
 }
 
-.section5Titre {
+.sectionCardTitre {
   display: flex;
   justify-content: center;
 }
 
-.bigTitre {
+.sectionCardTitreBigTitre {
   width: 600px;
   display: flex;
   align-items: center;
@@ -693,7 +585,7 @@ canvas {
   flex-wrap: nowrap;
 }
 
-.section5 {
+.sectionCard {
   margin-left: 50px;
   margin-bottom: 100px;
   display: flex;
@@ -704,16 +596,16 @@ canvas {
   background-color: #3c494e;
   margin: 0;
 }
-.section5 img {
+.sectionCard img {
   width: auto;
 }
 
-.section6 {
+.sectionMapFormulaire {
   display: flex;
   justify-content: center;
   margin-top: 100px;
 }
-.section6 .map-container {
+.sectionMapFormulaire .map-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -722,7 +614,7 @@ canvas {
   width: 1200px;
   height: 700px;
 }
-.section6 .map-container .map {
+.sectionMapFormulaire .map-container .map {
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -730,7 +622,7 @@ canvas {
   top: 0;
   left: 0;
 }
-.section6 .form-container {
+.sectionMapFormulaire .form-container {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -740,28 +632,28 @@ canvas {
   padding: 20px;
   color: white;
 }
-.section6 .form-container .form {
+.sectionMapFormulaire .form-container .form {
   margin-bottom: 10px;
 }
-.section6 .form-container .form__texteFormulaire {
+.sectionMapFormulaire .form-container .form__texteFormulaire {
   display: flex;
   padding: 5px 5px 40px 5px;
 }
-.section6 .form-container .form__name-field {
+.sectionMapFormulaire .form-container .form__name-field {
   display: flex;
   justify-content: space-between;
 }
-.section6 .form-container .form__name-field .form-group__input {
+.sectionMapFormulaire .form-container .form__name-field .form-group__input {
   width: 88%;
 }
-.section6 .form-container .form__btn {
+.sectionMapFormulaire .form-container .form__btn {
   background-color: #966622;
   color: #966622;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
 }
-.section6 .form-container .form__btn--primary {
+.sectionMapFormulaire .form-container .form__btn--primary {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px 50px;
   background-color: #3c494e;
@@ -770,28 +662,28 @@ canvas {
   border-radius: 10px;
   cursor: pointer;
 }
-.section6 .form-container .form__btn--primary:hover {
+.sectionMapFormulaire .form-container .form__btn--primary:hover {
   background-color: white;
   color: #966622;
 }
-.section6 .form-container .form-group input:focus {
+.sectionMapFormulaire .form-container .form-group input:focus {
   outline: 0;
 }
-.section6 .form-container .form-group__label {
+.sectionMapFormulaire .form-container .form-group__label {
   display: block;
   margin-bottom: 5px;
 }
-.section6 .form-container .form-group__input {
+.sectionMapFormulaire .form-container .form-group__input {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
 }
-.section6 .form-container .form-group__textarea {
+.sectionMapFormulaire .form-container .form-group__textarea {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
 }
-.section6 .form-container .form-group__errorMessage {
+.sectionMapFormulaire .form-container .form-group__errorMessage {
   color: rgb(227, 252, 1);
   font-size: 15px;
   font-weight: bold;

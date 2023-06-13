@@ -1,27 +1,27 @@
 .logoFooter {
-    display: flex;
-    justify-content: center;
-    }
-    
-    .navFooter {
-    display: flex;
-    justify-content: center;
-    }
-    
-    .faitPar {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 50px;
-    }
-    
-    .mediaLinks {
-    display: flex;
-    align-items: center;
-    }
-    
-    .mediaLinks a {
-    margin-right: 10px;
-    }
+	display: flex;
+	justify-content: center;
+}
+
+.navFooter {
+	display: flex;
+	justify-content: center;
+}
+
+.faitPar {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 50px;
+}
+
+.mediaLinks {
+	display: flex;
+	align-items: center;
+}
+
+.mediaLinks a {
+	margin-right: 10px;
+}

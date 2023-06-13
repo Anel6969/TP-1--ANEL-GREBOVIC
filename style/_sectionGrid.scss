@@ -1,31 +1,31 @@
-.secction3__grid {
+.sectionGrid__grid {
 	display: grid;
 	grid-column-gap: 15px;
 	grid-row-gap: 15px;
 	max-width: 1200px;
 }
-.secction3__div1 {
+.sectionGrid__div1 {
 	grid-area: 2 / 1 / 4 / 2;
 }
-.secction3__div2 {
+.sectionGrid__div2 {
 	grid-area: 1 / 2 / 3 / 4;
 }
-.secction3__div3 {
+.sectionGrid__div3 {
 	grid-area: 3 / 2 / 5 / 3;
 }
-.secction3__div4 {
+.sectionGrid__div4 {
 	grid-area: 2 / 4 / 3 / 5;
 }
-.secction3__div5 {
+.sectionGrid__div5 {
 	grid-area: 2 / 5 / 4 / 6;
 }
-.secction3__div6 {
+.sectionGrid__div6 {
 	grid-area: 3 / 3 / 6 / 5;
 }
-.secction3 {
+.sectionGrid {
 	display: flex;
 	justify-content: center;
 	padding-top: 100px;
 	padding-bottom: 80px;
-	background-color:   $couleurSecond;
+	background-color: $couleurSecond;
 }

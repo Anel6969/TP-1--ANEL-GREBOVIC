@@ -5,40 +5,45 @@ header {
 	padding: 10px;
 	justify-content: space-around;
 	flex-wrap: nowrap;
-  }
-  
-  /* MENU NAVIGATION */
-  
-  .nav {
+}
+
+.nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	border-radius: 10px;
 }
+
 .nav__list {
 	display: flex;
 	list-style: none;
+	
 	.nav__item {
 		.nav__link {
 			transition: all 0.3s;
+			
 			&:after {
 				transition: all 0.3s;
 			}
+			
 			&:before {
 				transition: all 0.3s;
 			}
 		}
 	}
 }
+
 .nav__item {
 	padding-right: 40px;
 	margin-right: 20px;
 	padding-top: 20px;
 }
+
 .nav__link { 
 	&:hover {
 		color: $couleurSecond;
 	}
+	
 	text-decoration: none;
 	color: $texteCouleur;
 	font-family: $fontDebase;
