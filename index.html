@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/favicon_16x16.png">
   <link rel="stylesheet" href="style/css/styles.css">
-  <link rel="stylesheet" type="text/css" href="sryle/css/demo.css">
   <script src="JS/script.js" defer></script>
-  <title>Counter-Strike: Global Offensive</title>
-    </head>
-    <body>
+  <title>Counter-Strike: 2</title>
+</head>
+<body>
   <section class="container">
     <header>
       <div class="logo">
@@ -174,45 +174,41 @@
       </div>
     </div>
   </section>
-  
-  </div>
-   <section class="section6">
-    <div id="map-container">
-        <div class="form-container">
-        </div>
-        <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19108935.70843485!2d-116.7565243511923!3d54.221971484684175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sfr!2sca!4v1686521718906!5m2!1sfr!2sca" width="1200" height="650" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-   </section>
-
-   <div class="astrodivider">
+  <div class="astrodivider">
     <div class="astrodividermask"></div><span><i>✶</i></span>
-
-        <form action="confirmation.html" method="get" onsubmit="return validationForm()" novalidate="">
-          <div class="texteFormulaire">
+  </div>
+  <section class="section6">
+    <div class="map-container">
+      <div class="form-container">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19108935.70843485!2d-116.7565243511923!3d54.221971484684175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sfr!2sca!4v1686521718906!5m2!1sfr!2sca" width="1200" height="650" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form class="form" action="confirmation.html" method="get" onsubmit="return validationForm()" novalidate="">
+          <div class="form__texteFormulaire">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sit.</p>
           </div>
-          <div class="name-field">
+          <div class="form__name-field">
             <div class="form-group">
-              <label for="last-name">Nom de famille :</label> <input type="text" id="last-name" name="last-name" required="">
-              <div class="errorMessage"></div>
+              <label class="form-group__label" for="last-name">Nom de famille :</label> <input class="form-group__input" type="text" id="last-name" name="last-name" required="">
+              <div class="form-group__errorMessage"></div>
             </div>
             <div class="form-group">
-              <label for="first-name">Prénom :</label> <input type="text" id="first-name" name="first-name" required="">
-              <div class="errorMessage"></div>
+              <label class="form-group__label" for="first-name">Prénom :</label> <input class="form-group__input" type="text" id="first-name" name="first-name" required="">
+              <div class="form-group__errorMessage"></div>
             </div>
           </div>
           <div class="form-group">
-            <label for="email">Email :</label> <input type="email" id="email" name="email" required="">
-            <div class="errorMessage"></div>
+            <label class="form-group__label" for="email">Email :</label> <input class="form-group__input" type="email" id="email" name="email" required="">
+            <div class="form-group__errorMessage"></div>
           </div>
           <div class="form-group">
-            <label for="message">Message :</label> 
-            <textarea id="message" name="message" rows="4" required=""></textarea>
-            <div class="errorMessage"></div>
-          </div><button type="submit" class="btn btn-primary">Soumettre</button>
+            <label class="form-group__label" for="message">Message :</label> 
+            <textarea class="form-group__textarea" id="message" name="message" rows="4" required=""></textarea>
+            <div class="form-group__errorMessage"></div>
+          </div>
+          <button type="submit" class="form__btn form__btn--primary">Soumettre</button>
         </form>
       </div>
     </div>
+  </section>
   
   <div class="astrodivider">
     <div class="astrodividermask"></div><span><i>✶</i></span>
@@ -259,5 +255,5 @@
   <section>
     <script src="JS/script.js"></script>
   </section>
-    </body>
+</body>
 </html>

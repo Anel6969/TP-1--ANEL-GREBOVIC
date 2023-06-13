@@ -1,29 +1,27 @@
 .logoFooter {
     display: flex;
     justify-content: center;
-}
-
-.navFooter{
+    }
+    
+    .navFooter {
     display: flex;
     justify-content: center;
+    }
     
-}
-
-.faitPar {
+    .faitPar {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .mediaLinks {
+    padding-bottom: 50px;
+    }
+    
+    .mediaLinks {
     display: flex;
     align-items: center;
-  }
-  
-  .mediaLinks a {
+    }
+    
+    .mediaLinks a {
     margin-right: 10px;
-  }
-  
-  
+    }

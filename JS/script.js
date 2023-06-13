@@ -25,7 +25,7 @@ var btn2 = document.querySelector('.btn2');
   
 
   const validationForm = () => {
-    const form = document.querySelector('form');
+    const form = document.querySelector('.form');
     const lastName = document.getElementById('last-name');
     const firstName = document.getElementById('first-name');
     const email = document.getElementById('email');
@@ -70,7 +70,7 @@ var btn2 = document.querySelector('.btn2');
   
   const setError = (element, message) => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.errorMessage');
+    const errorDisplay = inputControl.querySelector('.form-group__errorMessage');
   
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
@@ -79,7 +79,7 @@ var btn2 = document.querySelector('.btn2');
   
   const setSuccess = (element) => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.errorMessage');
+    const errorDisplay = inputControl.querySelector('.form-group__errorMessage');
   
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
