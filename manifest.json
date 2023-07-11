@@ -1,0 +1,24 @@
+{
+    "name": "PointnClick",
+    "short_name": "PnC",
+    "icons": [{
+    "src": "/Anel6969/TP-1--ANEL-GREBOVIC/blob/main/img/favicon_128x128.png",
+    "sizes": "128x128",
+    "type": "image/png",
+    "rpose" : "maskable"
+    }, {
+    "src": "/Anel6969/TP-1--ANEL-GREBOVIC/blob/main/img/favicon_144x144.png",
+    "sizes": "144x144",
+    "type": "image/png",
+    "rpose" : "any"
+    } , {
+    "src": "/Anel6969/TP-1--ANEL-GREBOVIC/blob/main/img/favicon_512x512.pngg",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose" : "maskable"
+    }],
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#966622",
+    "theme_color": "#966622"
+    }
